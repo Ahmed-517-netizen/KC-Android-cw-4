@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/Calculator"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Temperature"
+android:background="@color/white">
+
+<TextView
+    android:id="@+id/Txtheader"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="36dp"
+    android:gravity="center"
+    android:text="Temperature"
+    android:textColor="@color/black"
+    android:textSize="48sp"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="49dp" />
+
+<EditText
+    android:id="@+id/edttemp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/Txtheader"
+    android:layout_centerHorizontal="true"
+    android:ems="10"
+    android:hint="Temp degree"
+    android:inputType="number"
+    android:textSize="34sp"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="81dp" />
+
+
+
+<Button
+    android:id="@+id/btntemp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/edttemp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="156dp"
+
+    android:backgroundTint="@color/black"
+    android:onClick="btntempclick"
+
+    android:text="Get Temp"
+    android:textSize="34sp"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="81dp" />
+
+<TextView
+    android:id="@+id/TxttempResult"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btntemp"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:text="Result"
+    android:textColor="@color/black"
+    android:textSize="48sp"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="49dp" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/black"
+        android:onClick="btnback"
+        android:text="Back"
+        android:textSize="34sp"
+        android:layout_below="@+id/TxttempResult"
+        tools:ignore="MissingConstraints"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="81dp" />
+
+</RelativeLayout>

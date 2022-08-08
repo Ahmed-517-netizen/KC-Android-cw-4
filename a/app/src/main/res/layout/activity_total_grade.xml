@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".totalGrade"
+    android:background="@color/white">
+
+  <TextView
+      android:id="@+id/Txtheader"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="36dp"
+      android:gravity="center"
+      android:text="Grade"
+      android:textColor="@color/black"
+      android:textSize="48sp"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="49dp" />
+
+  <EditText
+      android:id="@+id/edtfirstno"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/Txtheader"
+      android:layout_centerHorizontal="true"
+      android:ems="10"
+      android:hint="Chapter one degree"
+      android:inputType="number"
+      android:textSize="34sp"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="81dp" />
+
+  <EditText
+      android:id="@+id/edtscondno"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/edtfirstno"
+      android:layout_centerHorizontal="true"
+      android:ems="10"
+
+      android:hint="Chapter two degree"
+      android:inputType="number"
+      android:textSize="34sp"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="81dp" />
+
+  <Button
+      android:id="@+id/btnresult"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/edtscondno"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="15dp"
+
+      android:backgroundTint="@color/black"
+      android:onClick="btnresult"
+
+      android:text="Get result"
+      android:textSize="34sp"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="81dp" />
+
+  <TextView
+      android:id="@+id/Txttotal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/btnresult"
+      android:layout_centerHorizontal="true"
+      android:gravity="center"
+      android:text="Result"
+      android:textColor="@color/black"
+      android:textSize="48sp"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="49dp" />
+  <Button
+      android:id="@+id/btnback"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:backgroundTint="@color/black"
+      android:onClick="btnback"
+      android:text="Back"
+      android:textSize="34sp"
+      android:layout_below="@+id/Txttotal"
+      tools:ignore="MissingConstraints"
+      android:layout_centerHorizontal="true"
+      tools:layout_editor_absoluteX="81dp" />
+
+</RelativeLayout>
